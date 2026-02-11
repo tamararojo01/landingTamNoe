@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Utensils, Scissors, Stethoscope, Sparkles, Dumbbell } from 'lucide-react';
 import { Section } from '../ui/Section';

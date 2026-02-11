@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Sherfand Trade",
   },
   description:
-    "Sherfand Trade ofrece webs y fotografía profesional para negocios locales. Especialistas en restaurantes. Consigue más clientes con diseño moderno y fotos que venden. Desde 199€.",
+    "Sherfand Trade ofrece webs y fotografía profesional para negocios locales. Especialistas en restaurantes. Consigue más clientes con diseño moderno y fotos que venden. Desde 249€.",
   keywords: [
     "webs para negocios locales",
     "diseño web restaurantes",

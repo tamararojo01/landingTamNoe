@@ -15,7 +15,7 @@ export const PacksSection = () => {
   const packs = [
     {
       name: 'Pack Básico',
-      price: '199',
+      price: '249',
       originalPrice: '299',
       description: 'Perfecto para empezar tu presencia online',
       features: [
@@ -32,7 +32,7 @@ export const PacksSection = () => {
     },
     {
       name: 'Pack Premium',
-      price: '349',
+      price: '399',
       originalPrice: '449',
       description: 'La solución completa para destacar al máximo',
       features: [

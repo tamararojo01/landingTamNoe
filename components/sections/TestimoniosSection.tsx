@@ -65,7 +65,7 @@ export const TestimoniosSection = () => {
 
             {/* Testimonio */}
             <p className="text-secondary-700 leading-relaxed mb-6 relative z-10">
-              "{testimonio.text}"
+              &ldquo;{testimonio.text}&rdquo;
             </p>
 
             {/* Author */}

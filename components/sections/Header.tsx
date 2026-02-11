@@ -67,12 +67,17 @@ export const Header = () => {
           {/* Logo/Brand */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center group"
+            className="flex items-center gap-3 group"
           >
             <Logo variant="dark" size="sm" showText={false} />
-            <span className="ml-3 text-lg md:text-xl font-bold text-secondary-900">
-              Sherfand Trade
-            </span>
+            <div className="flex flex-col">
+              <span className="text-base md:text-lg font-bold text-secondary-900 tracking-wider">
+                SHERFAND TRADE
+              </span>
+              <span className="text-[9px] text-secondary-600 tracking-widest font-medium">
+                PROFESSIONAL SERVICES
+              </span>
+            </div>
           </button>
 
           {/* Desktop Navigation */}

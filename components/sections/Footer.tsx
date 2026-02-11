@@ -41,15 +41,15 @@ export const Footer = () => {
           
           {/* Branding y descripción */}
           <div>
-            <div className="mb-4">
-              <Logo variant="light" size="sm" showText={true} />
+            <div className="mb-6">
+              <Logo variant="light" size="md" showText={true} />
             </div>
-            <p className="text-secondary-400 leading-relaxed mb-6 text-sm">
+            <p className="text-secondary-400 leading-relaxed text-sm max-w-xs">
               Webs y fotografía profesional para negocios locales. Especialistas en restaurantes.
             </p>
             
             {/* Redes sociales */}
-            <div className="flex gap-3">
+            <div className="flex gap-3 mt-6">
               <a
                 href="https://instagram.com/sherfandtrade"
                 target="_blank"

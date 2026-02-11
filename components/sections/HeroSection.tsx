@@ -32,40 +32,27 @@ export const HeroSection = () => {
   };
 
   return (
-    <Section background="white" className="pt-32 md:pt-40 pb-20 md:pb-28">
-      <div className="max-w-5xl mx-auto text-center">
-        {/* Badge discreto */}
-        <div className="inline-block mb-8 animate-fade-in">
-          <span className="bg-secondary-50 text-secondary-700 px-5 py-2 rounded-full text-sm font-medium border border-secondary-200">
-            SherfandTrade · Especialistas en restaurantes
-          </span>
-        </div>
-
-        {/* Título Principal - Limpio y directo */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-900 mb-6 leading-tight">
-          Webs y fotografía profesional para negocios locales
+    <Section background="white" className="pt-40 md:pt-48 pb-24 md:pb-32">
+      <div className="max-w-6xl mx-auto text-center">
+        {/* Título Principal - Corporativo y de alto impacto */}
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-900 mb-8 leading-tight tracking-tight">
+          Webs profesionales y fotografía estratégica para negocios locales
         </h1>
 
-        {/* Subtítulo */}
-        <p className="text-xl md:text-2xl text-secondary-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Consigue más clientes con una web moderna y fotos que venden.
+        {/* Subtítulo - Especialización clara */}
+        <p className="text-xl md:text-2xl text-secondary-600 mb-16 font-light">
+          Especialistas en restaurantes · SherfandTrade
         </p>
 
-        {/* CTAs - Principal y Secundario */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        {/* CTA Principal - Sólido y directo */}
+        <div className="mb-20">
           <Button
             size="lg"
             onClick={handleContactClick}
-            className="w-full sm:w-auto text-base px-8 py-4 bg-primary-600 hover:bg-primary-700 shadow-md hover:shadow-lg transition-all duration-200"
+            className="px-12 py-5 text-lg bg-primary-600 hover:bg-primary-700 shadow-md hover:shadow-lg transition-all duration-200"
           >
-            Solicitar presupuesto <ArrowRight size={20} className="ml-2" />
+            Solicitar presupuesto
           </Button>
-          <button
-            onClick={scrollToExamples}
-            className="text-secondary-600 hover:text-secondary-900 font-medium flex items-center gap-2 transition-colors px-6 py-3"
-          >
-            Ver ejemplos
-          </button>
         </div>
 
         {/* Social Proof discreto */}

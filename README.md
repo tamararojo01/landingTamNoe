@@ -115,7 +115,7 @@ landingTamNoe/
 1. **Hero Section** - Headline potente con CTA principal
 2. **Qué Ofrecemos** - Servicios incluidos
 3. **Cómo Funciona** - 3 pasos claros
-4. **Packs** - Básico (299€) y Premium (449€)
+4. **Packs** - Básico (199€) y Premium (349€)
 5. **Ejemplos** - Demos de trabajos
 6. **Beneficios** - Por qué elegir el servicio
 7. **Testimonios** - Reseñas de clientes

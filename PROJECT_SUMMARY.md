@@ -36,7 +36,7 @@ El servidor de desarrollo está corriendo en: **http://localhost:3000**
 1. ✅ `components/sections/HeroSection.tsx` - Hero principal con CTAs
 2. ✅ `components/sections/OfrecemosSection.tsx` - Servicios incluidos
 3. ✅ `components/sections/ComoFuncionaSection.tsx` - Proceso en 3 pasos
-4. ✅ `components/sections/PacksSection.tsx` - Packs Básico (299€) y Premium (449€)
+4. ✅ `components/sections/PacksSection.tsx` - Packs Básico (199€) y Premium (349€)
 5. ✅ `components/sections/EjemplosSection.tsx` - Demos y ejemplos
 6. ✅ `components/sections/BeneficiosSection.tsx` - Beneficios con estadísticas
 7. ✅ `components/sections/TestimoniosSection.tsx` - Testimonios de clientes

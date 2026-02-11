@@ -114,7 +114,7 @@ npm run dev
 1. **Hero** - Primera impresión con CTAs
 2. **Qué Ofrecemos** - Servicios incluidos
 3. **Cómo Funciona** - 3 pasos
-4. **Packs** - Precios y planes
+4. **Packs** - Básico 199€ + Premium 349€
 5. **Ejemplos** - Demos de trabajo
 6. **Beneficios** - Por qué elegir
 7. **Testimonios** - Prueba social

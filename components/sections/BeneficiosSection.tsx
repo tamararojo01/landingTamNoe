@@ -23,7 +23,7 @@ import { Button } from '../ui/Button';
 export const BeneficiosSection = () => {
   const handleContactClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Quiero solicitar presupuesto con SherfandTrade';
+    const message = 'Hola! Quiero solicitar presupuesto con Sherfand Trade';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -46,7 +46,7 @@ export const BeneficiosSection = () => {
     {
       icon: Settings,
       title: 'Soporte real de empresa profesional',
-      description: 'Equipo de SherfandTrade disponible para resolver dudas y hacer cambios. Trato personalizado y cercano cuando lo necesites.',
+      description: 'Equipo de Sherfand Trade disponible para resolver dudas y hacer cambios. Trato personalizado y cercano cuando lo necesites.',
     },
   ];
 

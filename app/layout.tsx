@@ -11,16 +11,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://sherfandtrade.com"),
   title: {
-    default: "SherfandTrade - Webs y Fotografía Profesional para Negocios Locales | Especialistas en Restaurantes",
-    template: "%s | SherfandTrade",
+    default: "Sherfand Trade - Webs y Fotografía Profesional para Negocios Locales | Especialistas en Restaurantes",
+    template: "%s | Sherfand Trade",
   },
   description:
-    "SherfandTrade ofrece webs y fotografía profesional para negocios locales. Especialistas en restaurantes. Consigue más clientes con diseño moderno y fotos que venden. Desde 199€.",
+    "Sherfand Trade ofrece webs y fotografía profesional para negocios locales. Especialistas en restaurantes. Consigue más clientes con diseño moderno y fotos que venden. Desde 199€.",
   keywords: [
     "webs para negocios locales",
     "diseño web restaurantes",
     "fotografía profesional negocios",
-    "SherfandTrade",
+    "Sherfand Trade",
     "web restaurante moderna",
     "aumentar clientes negocio",
     "fotos profesionales restaurante",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     "SEO negocios locales",
     "web profesional económica",
   ],
-  authors: [{ name: "SherfandTrade" }],
-  creator: "SherfandTrade",
-  publisher: "SherfandTrade",
+  authors: [{ name: "Sherfand Trade" }],
+  creator: "Sherfand Trade",
+  publisher: "Sherfand Trade",
   formatDetection: {
     email: false,
     address: false,
@@ -44,24 +44,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_ES",
     url: "https://sherfandtrade.com",
-    title: "SherfandTrade - Webs y Fotografía Profesional para Negocios Locales",
+    title: "Sherfand Trade - Webs y Fotografía Profesional para Negocios Locales",
     description:
-      "Webs profesionales y fotografía de calidad para negocios locales. Especialistas en restaurantes. Consigue más clientes con SherfandTrade.",
-    siteName: "SherfandTrade",
+      "Webs profesionales y fotografía de calidad para negocios locales. Especialistas en restaurantes. Consigue más clientes con Sherfand Trade.",
+    siteName: "Sherfand Trade",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "SherfandTrade - Webs y Fotografía Profesional para Negocios Locales",
+        alt: "Sherfand Trade - Webs y Fotografía Profesional para Negocios Locales",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SherfandTrade - Webs y Fotografía Profesional para Negocios Locales",
+    title: "Sherfand Trade - Webs y Fotografía Profesional para Negocios Locales",
     description:
-      "Diseño web moderno + fotografía profesional para restaurantes y negocios locales. Consigue más clientes con SherfandTrade.",
+      "Diseño web moderno + fotografía profesional para restaurantes y negocios locales. Consigue más clientes con Sherfand Trade.",
     images: ["/og-image.jpg"],
     creator: "@sherfandtrade",
   },

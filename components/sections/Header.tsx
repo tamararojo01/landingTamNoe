@@ -69,7 +69,7 @@ export const Header = () => {
             className="flex items-center gap-2 group"
           >
             <div className="text-xl md:text-2xl font-bold text-secondary-900">
-              SherfandTrade
+              Sherfand Trade
             </div>
           </button>
 

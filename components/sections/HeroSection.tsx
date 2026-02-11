@@ -23,7 +23,7 @@ import { Section } from '../ui/Section';
 export const HeroSection = () => {
   const handleContactClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Quiero solicitar mi web profesional con SherfandTrade';
+    const message = 'Hola! Quiero solicitar mi web profesional con Sherfand Trade';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -41,7 +41,7 @@ export const HeroSection = () => {
 
         {/* Subtítulo - Especialización clara */}
         <p className="text-xl md:text-2xl text-secondary-600 mb-16 font-light">
-          Especialistas en restaurantes · SherfandTrade
+          Especialistas en restaurantes · Sherfand Trade
         </p>
 
         {/* CTA Principal - Sólido y directo */}

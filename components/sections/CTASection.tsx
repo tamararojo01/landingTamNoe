@@ -22,7 +22,7 @@ import { Button } from '../ui/Button';
 export const CTASection = () => {
   const handleContactClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Quiero solicitar presupuesto en SherfandTrade';
+    const message = 'Hola! Quiero solicitar presupuesto en Sherfand Trade';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -35,7 +35,7 @@ export const CTASection = () => {
         </h2>
 
         <p className="text-xl text-secondary-300 mb-10 max-w-2xl mx-auto">
-          Solicita presupuesto en SherfandTrade
+          Solicita presupuesto en Sherfand Trade
         </p>
 
         {/* CTA Principal */}
@@ -45,7 +45,7 @@ export const CTASection = () => {
             onClick={handleContactClick}
             className="px-10 py-5 bg-white text-secondary-900 hover:bg-secondary-100 shadow-lg hover:shadow-xl transition-al duration-200"
           >
-            Solicitar presupuesto en SherfandTrade <ArrowRight size={20} className="ml-2" />
+            Solicitar presupuesto en Sherfand Trade <ArrowRight size={20} className="ml-2" />
           </Button>
         </div>
 

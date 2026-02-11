@@ -29,7 +29,7 @@ export const Footer = () => {
 
   const handleWhatsAppClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Me gustaría obtener más información sobre SherfandTrade';
+    const message = 'Hola! Me gustaría obtener más información sobre Sherfand Trade';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -41,7 +41,7 @@ export const Footer = () => {
           {/* Branding y descripción */}
           <div>
             <h3 className="text-xl font-bold mb-3 text-white">
-              SherfandTrade
+              Sherfand Trade
             </h3>
             <p className="text-secondary-400 leading-relaxed mb-6 text-sm">
               Webs y fotografía profesional para negocios locales. Especialistas en restaurantes.

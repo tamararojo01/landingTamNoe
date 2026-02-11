@@ -40,72 +40,66 @@ export const Footer = () => {
           
           {/* Branding y descripción */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary-400 to-primary-500 bg-clip-text text-transparent">
+            <h3 className="text-xl font-bold mb-3 text-white">
               SherfandTrade
             </h3>
-            <p className="text-secondary-300 leading-relaxed mb-6">
-              SherfandTrade — Webs y fotografía profesional para negocios locales. Especialistas en restaurantes.
+            <p className="text-secondary-400 leading-relaxed mb-6 text-sm">
+              Webs y fotografía profesional para negocios locales. Especialistas en restaurantes.
             </p>
             
-            {/* Redes sociales - iconos minimalistas */}
+            {/* Redes sociales */}
             <div className="flex gap-3">
               <a
                 href="https://instagram.com/sherfandtrade"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-secondary-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                className="w-9 h-9 bg-secondary-800 hover:bg-secondary-700 rounded flex items-center justify-center transition-colors duration-200"
                 aria-label="Visitanos en Instagram"
               >
-                <Instagram size={20} />
+                <Instagram size={18} />
               </a>
               <a
                 href="https://facebook.com/sherfandtrade"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-secondary-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                className="w-9 h-9 bg-secondary-800 hover:bg-secondary-700 rounded flex items-center justify-center transition-colors duration-200"
                 aria-label="Visitanos en Facebook"
               >
-                <Facebook size={20} />
+                <Facebook size={18} />
               </a>
               <a
                 href="https://linkedin.com/company/sherfandtrade"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-secondary-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                className="w-9 h-9 bg-secondary-800 hover:bg-secondary-700 rounded flex items-center justify-center transition-colors duration-200"
                 aria-label="Visitanos en LinkedIn"
               >
-                <Linkedin size={20} />
+                <Linkedin size={18} />
               </a>
             </div>
           </div>
 
           {/* Contacto */}
           <div>
-            <h4 className="text-lg font-bold mb-4 text-white">Contacto</h4>
-            <ul className="space-y-3">
+            <h4 className="text-base font-bold mb-4 text-white">Contacto</h4>
+            <ul className="space-y-3 text-sm">
               <li>
                 <button
                   onClick={handleEmailClick}
-                  className="flex items-center gap-3 text-secondary-300 hover:text-primary-400 transition-colors group w-full text-left"
+                  className="flex items-center gap-2 text-secondary-400 hover:text-white transition-colors w-full text-left"
                   aria-label="Enviar email a sherfandtrade@gmail.com"
                 >
-                  <Mail
-                    size={20}
-                    className="text-primary-500 group-hover:text-primary-400 flex-shrink-0"
-                  />
+                  <Mail size={16} className="flex-shrink-0" />
                   <span>sherfandtrade@gmail.com</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={handleWhatsAppClick}
-                  className="flex items-center gap-3 text-secondary-300 hover:text-primary-400 transition-colors group w-full text-left"
+                  className="flex items-center gap-2 text-secondary-400 hover:text-white transition-colors w-full text-left"
                   aria-label="Llamar al +34 660 666 706"
                 >
-                  <Phone
-                    size={20}
-                    className="text-primary-500 group-hover:text-primary-400 flex-shrink-0"
-                  />
+                  <Phone size={16} className="flex-shrink-0" />
                   <span>+34 660 666 706</span>
                 </button>
               </li>

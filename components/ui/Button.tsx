@@ -15,11 +15,11 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseStyles = 'font-semibold rounded-lg transition-all duration-300 inline-flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseStyles = 'font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed';
   
   const variants = {
-    primary: 'bg-primary-600 text-white hover:bg-primary-700 shadow-lg hover:shadow-xl hover:scale-105',
-    secondary: 'bg-secondary-800 text-white hover:bg-secondary-900 shadow-lg hover:shadow-xl hover:scale-105',
+    primary: 'bg-primary-600 text-white hover:bg-primary-700 shadow-md hover:shadow-lg',
+    secondary: 'bg-secondary-800 text-white hover:bg-secondary-900 shadow-md hover:shadow-lg',
     outline: 'border-2 border-primary-600 text-primary-600 hover:bg-primary-50',
     ghost: 'text-secondary-700 hover:bg-secondary-100',
   };

@@ -15,8 +15,8 @@ export const PacksSection = () => {
   const packs = [
     {
       name: 'Pack Básico',
-      price: '249',
-      originalPrice: '299',
+      price: '399',
+      originalPrice: '449',
       description: 'Perfecto para empezar tu presencia online',
       features: [
         'Web responsive de una página',
@@ -32,8 +32,8 @@ export const PacksSection = () => {
     },
     {
       name: 'Pack Premium',
-      price: '399',
-      originalPrice: '449',
+      price: '249',
+      originalPrice: '299',
       description: 'La solución completa para destacar al máximo',
       features: [
         'Web responsive multipágina',

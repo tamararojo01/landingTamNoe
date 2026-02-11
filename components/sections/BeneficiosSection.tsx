@@ -1,91 +1,123 @@
 'use client';
 
 import React from 'react';
-import { TrendingUp, Award, Search, Smartphone, Clock, Shield } from 'lucide-react';
+import { TrendingUp, Camera, Settings, Smartphone } from 'lucide-react';
 import { Section } from '../ui/Section';
 import { Button } from '../ui/Button';
 
+/**
+ * Beneficios Section - Muestra los beneficios clave del servicio
+ * 
+ * Características:
+ * - 4 beneficios principales con iconos
+ * - Diseño en grid responsivo (1 col móvil, 2 cols tablet, 4 cols desktop)
+ * - Cada beneficio tiene icono, título y descripción persuasiva
+ * - CTA intermedio para reducir fricción
+ * - Animaciones hover para mejor UX
+ * 
+ * Para modificar en el futuro:
+ * - Cambiar los beneficios en el array 'beneficios'
+ * - Ajustar los iconos importados de lucide-react
+ * - Modificar el copy del CTA según la estrategia
+ */
 export const BeneficiosSection = () => {
   const handleContactClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Quiero aumentar las reservas de mi restaurante';
+    const message = 'Hola! Quiero mi web + fotos profesionales para mi restaurante';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const beneficios = [
     {
       icon: TrendingUp,
-      title: 'Más reservas garantizadas',
-      description: 'Web optimizada 100% para convertir visitantes en reservas. Formularios simples, botón WhatsApp directo y proceso sin fricción.',
-      stat: '+40%',
-      statLabel: 'más reservas',
-      bullets: [
-        'Botón de reserva visible en todo momento',
-        'WhatsApp integrado para consultas rápidas',
-        'Formulario de contacto que funciona',
-      ],
+      title: 'Más reservas con una web moderna y atractiva',
+      description: 'Diseño profesional optimizado para convertir visitantes en clientes. Botones de reserva visibles, proceso simple y rápido que genera confianza.',
+      color: 'from-primary-500 to-primary-600',
     },
     {
-      icon: Search,
-      title: 'Visibilidad en Google',
-      description: 'Aparece cuando buscan "restaurantes cerca de mí" o tu tipo de cocina. SEO local que te posiciona frente a la competencia.',
-      stat: '3x',
-      statLabel: 'más búsquedas',
-      bullets: [
-        'Optimizado para búsquedas locales',
-        'Google Maps integrado',
-        'Palabras clave de tu zona y cocina',
-      ],
+      icon: Camera,
+      title: 'Fotografía profesional que vende tu comida',
+      description: 'Sesión de fotos incluida con fotógrafo experto. Imágenes de alta calidad que abren el apetito y muestran tus platos en su mejor versión.',
+      color: 'from-primary-600 to-primary-700',
+    },
+    {
+      icon: Settings,
+      title: 'Fácil de gestionar y actualizar',
+      description: 'Panel simple para editar menú, horarios y promociones. No necesitas conocimientos técnicos. Actualizaciones rápidas cuando lo necesites.',
+      color: 'from-primary-500 to-primary-600',
     },
     {
       icon: Smartphone,
-      title: 'Funciona en móviles',
-      description: 'El 85% de tus clientes buscan desde el móvil. Tu web se ve perfecta en cualquier dispositivo y carga en menos de 2 segundos.',
-      stat: '85%',
-      statLabel: 'buscan mobile',
-      bullets: [
-        'Diseño responsive profesional',
-        'Carga ultrarrápida',
-        'Botones grandes y fáciles de tocar',
-      ],
-    },
-    {
-      icon: Clock,
-      title: 'Listo en 7 días',
-      description: 'No esperes meses. En una semana tienes tu web funcionando y empiezas a recibir reservas. Proceso simple y rápido.',
-      stat: '7 días',
-      statLabel: 'de entrega',
-      bullets: [
-        'Sin complicaciones técnicas',
-        'Nosotros nos encargamos de todo',
-        'Tu solo defines tu menú y horarios',
-      ],
-    },
-    {
-      icon: Award,
-      title: 'Imagen profesional',
-      description: 'Fotos de calidad profesional de tus platos que abren el apetito. Primera impresión que genera confianza y deseo.',
-      stat: '4.9/5',
-      statLabel: 'valoración',
-      bullets: [
-        'Fotógrafo profesional incluido',
-        'Fotos editadas y optimizadas',
-        'Tu restaurante en su mejor versión',
-      ],
-    },
-    {
-      icon: Shield,
-      title: 'Sin sorpresas',
-      description: 'Precio único, todo incluido. Hosting gratis 1 año. Sin costes ocultos ni pagos mensuales sorpresa. Total transparencia.',
-      stat: '0€',
-      statLabel: 'mensuales',
-      bullets: [
-        'Pago único, sin mensualidades',
-        'Hosting incluido 1 año',
-        'Sin letra pequeña',
-      ],
+      title: 'Optimizado para móvil y SEO básico',
+      description: 'El 85% de clientes buscan desde el móvil. Tu web se ve perfecta en todos los dispositivos y está optimizada para aparecer en Google.',
+      color: 'from-primary-600 to-primary-700',
     },
   ];
+
+  return (
+    <Section background="white" id="beneficios">
+      <div className="text-center mb-16 animate-fade-in">
+        <span className="inline-block bg-primary-100 text-primary-700 px-5 py-2.5 rounded-full text-sm font-bold mb-6">
+          ✨ Beneficios del servicio
+        </span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-900 mb-6">
+          Todo lo que necesitas para destacar online
+        </h2>
+        <p className="text-lg md:text-xl text-secondary-600 max-w-3xl mx-auto">
+          No solo creamos una web bonita. Te entregamos una{' '}
+          <span className="font-bold text-primary-600">herramienta completa</span> para atraer más clientes
+        </p>
+      </div>
+
+      {/* Grid de 4 beneficios */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mb-16">
+        {beneficios.map((beneficio, index) => {
+          const Icon = beneficio.icon;
+          return (
+            <div
+              key={index}
+              className="group bg-gradient-to-br from-white to-secondary-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-secondary-100"
+            >
+              {/* Icono con fondo degradado */}
+              <div className="mb-6">
+                <div className={`w-16 h-16 bg-gradient-to-br ${beneficio.color} rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                  <Icon size={32} className="text-white" />
+                </div>
+              </div>
+
+              {/* Título */}
+              <h3 className="text-xl font-bold text-secondary-900 mb-4 leading-tight">
+                {beneficio.title}
+              </h3>
+
+              {/* Descripción */}
+              <p className="text-secondary-600 leading-relaxed">
+                {beneficio.description}
+              </p>
+
+              {/* Línea decorativa que aparece en hover */}
+              <div className="mt-6 h-1 w-0 group-hover:w-full bg-gradient-to-r from-primary-500 to-primary-600 transition-all duration-500 rounded-full"></div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* CTA Intermedio */}
+      <div className="text-center animate-fade-in">
+        <Button
+          size="lg"
+          onClick={handleContactClick}
+          className="text-lg px-10 py-6 bg-primary-600 hover:bg-primary-700 shadow-xl hover:shadow-primary-500/50 transform hover:scale-105 transition-all"
+        >
+          Quiero mi web + fotos ahora
+        </Button>
+        <p className="text-sm text-secondary-600 mt-4">
+          💬 Respuesta en menos de 24h · ⚡ Sin compromiso · ✅ Garantía de satisfacción
+        </p>
+      </div>
+    </Section>
+  );
+};
 
   return (
     <Section background="white" id="beneficios">

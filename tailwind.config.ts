@@ -9,18 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Azul eléctrico como color principal
         primary: {
-          50: '#fef3f2',
-          100: '#fde4e1',
-          200: '#fbcdc7',
-          300: '#f7aaa0',
-          400: '#f17968',
-          500: '#e64f3c',
-          600: '#d3321e',
-          700: '#b12715',
-          800: '#932315',
-          900: '#7a2318',
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',  // Azul eléctrico principal
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
         },
+        // Grises para texto y fondos
         secondary: {
           50: '#f8fafc',
           100: '#f1f5f9',

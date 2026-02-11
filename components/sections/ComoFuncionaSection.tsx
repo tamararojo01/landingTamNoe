@@ -1,28 +1,42 @@
 import React from 'react';
-import { Camera, Palette, Rocket } from 'lucide-react';
+import { MessageCircle, Palette, Rocket } from 'lucide-react';
 import { Section } from '../ui/Section';
 
+/**
+ * Cómo Trabajamos Section - Proceso en 3 pasos
+ * 
+ * Características:
+ * - 3 pasos claros con iconos descriptivos
+ * - Diseño con líneas conectoras entre pasos (desktop)
+ * - Números destacados en badge
+ * - Responsive: 1 columna en móvil, 3 columnas en desktop
+ * 
+ * Para modificar en el futuro:
+ * - Actualizar los pasos en el array 'steps'
+ * - Cambiar los iconos según el proceso (importar de lucide-react)
+ * - Ajustar colores del degradado si es necesario
+ */
 export const ComoFuncionaSection = () => {
   const steps = [
     {
       number: '01',
-      icon: Camera,
-      title: 'Sesión de fotos',
-      description: 'Nuestro fotógrafo profesional visita tu restaurante. Capturamos tus mejores platos, el ambiente y los detalles que te hacen único.',
+      icon: MessageCircle,
+      title: 'Contacta y cuéntanos tu restaurante',
+      description: 'Conversación breve por WhatsApp o teléfono. Nos cuentas sobre tu restaurante, tu cocina y qué quieres transmitir. Sin compromisos.',
       color: 'from-primary-500 to-primary-600',
     },
     {
       number: '02',
       icon: Palette,
-      title: 'Diseñamos tu web',
-      description: 'Creamos tu página web con las fotos profesionales, tu carta digital, información de contacto y botones de reserva. Todo optimizado para móviles.',
+      title: 'Creamos tu web y fotos profesionales',
+      description: 'Diseñamos tu web moderna y visitamos tu local para la sesión de fotos. Tú te enfocas en tu negocio, nosotros en lo técnico.',
       color: 'from-primary-600 to-primary-700',
     },
     {
       number: '03',
       icon: Rocket,
-      title: 'Publicación y resultados',
-      description: 'Lanzamos tu web y la optimizamos para Google. En menos de 7 días empiezas a recibir consultas y reservas de nuevos clientes.',
+      title: 'Lanza y atrae más clientes',
+      description: 'Publicamos tu web optimizada para Google. En 7 días estás online recibiendo consultas, reservas y nuevos clientes cada día.',
       color: 'from-primary-700 to-primary-800',
     },
   ];

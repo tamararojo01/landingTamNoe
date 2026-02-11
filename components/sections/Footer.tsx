@@ -24,7 +24,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:info@sherfandtrade.com';
+    window.location.href = 'mailto:sherfandtrade@gmail.com';
   };
 
   const handleWhatsAppClick = () => {
@@ -87,13 +87,13 @@ export const Footer = () => {
                 <button
                   onClick={handleEmailClick}
                   className="flex items-center gap-3 text-secondary-300 hover:text-primary-400 transition-colors group w-full text-left"
-                  aria-label="Enviar email a info@sherfandtrade.com"
+                  aria-label="Enviar email a sherfandtrade@gmail.com"
                 >
                   <Mail
                     size={20}
                     className="text-primary-500 group-hover:text-primary-400 flex-shrink-0"
                   />
-                  <span>info@sherfandtrade.com</span>
+                  <span>sherfandtrade@gmail.com</span>
                 </button>
               </li>
               <li>

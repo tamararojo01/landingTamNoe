@@ -12,6 +12,7 @@ import { ContactoSection } from '@/components/sections/ContactoSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { Footer } from '@/components/sections/Footer';
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
+import { MobileCtaButton } from '@/components/ui/MobileCtaButton';
 
 export default function Home() {
   return (
@@ -38,6 +39,9 @@ export default function Home() {
         <ContactoSection />
         <CTASection />
         <Footer />
+
+        {/* Mobile Sticky CTA */}
+        <MobileCtaButton />
       </main>
     </>
   );

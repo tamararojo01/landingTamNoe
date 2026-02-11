@@ -157,9 +157,14 @@ export const Footer = () => {
         {/* Barra inferior - Copyright y legales */}
         <div className="border-t border-secondary-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-secondary-400">
-            <p className="text-center md:text-left">
-              © {currentYear} SherfandTrade. Todos los derechos reservados.
-            </p>
+            <div className="text-center md:text-left">
+              <p className="font-medium">
+                © {currentYear} Sherfand Trade S.L. Todos los derechos reservados.
+              </p>
+              <p className="text-xs text-secondary-500 mt-1">
+                sherfandtrade@gmail.com · Barcelona, España
+              </p>
+            </div>
             
             {/* Enlaces legales */}
             <div className="flex gap-6 flex-wrap justify-center">

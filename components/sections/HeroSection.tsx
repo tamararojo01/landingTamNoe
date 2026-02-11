@@ -40,9 +40,27 @@ export const HeroSection = () => {
         </h1>
 
         {/* Subtítulo - Especialización clara */}
-        <p className="text-xl md:text-2xl text-secondary-600 mb-16 font-light">
-          Especialistas en restaurantes · Sherfand Trade
+        <p className="text-xl md:text-2xl text-secondary-600 mb-8 font-light">
+          Especialistas en soluciones digitales para restaurantes
         </p>
+
+        {/* Línea de confianza */}
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm md:text-base text-secondary-700 mb-16">
+          <div className="flex items-center gap-2">
+            <span className="text-primary-600 font-bold">✔</span>
+            <span>Atención personalizada</span>
+          </div>
+          <span className="hidden md:inline text-secondary-400">·</span>
+          <div className="flex items-center gap-2">
+            <span className="text-primary-600 font-bold">✔</span>
+            <span>Entrega rápida</span>
+          </div>
+          <span className="hidden md:inline text-secondary-400">·</span>
+          <div className="flex items-center gap-2">
+            <span className="text-primary-600 font-bold">✔</span>
+            <span>Proyectos profesionales</span>
+          </div>
+        </div>
 
         {/* CTA Principal - Sólido y directo */}
         <div className="mb-20">

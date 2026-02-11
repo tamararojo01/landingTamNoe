@@ -11,7 +11,7 @@ export const Footer = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phone = '34600000000';
+    const phone = '34660666706';
     const message = 'Hola! Me gustaría obtener más información';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
@@ -82,7 +82,7 @@ export const Footer = () => {
                     size={20}
                     className="text-primary-500 group-hover:text-primary-400"
                   />
-                  +34 600 000 000
+                  +34 660 666 706
                 </button>
               </li>
             </ul>

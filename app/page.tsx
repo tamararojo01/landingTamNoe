@@ -14,7 +14,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       {/* WhatsApp Floating Button */}
       <WhatsAppButton 
-        phoneNumber="34600000000" 
+        phoneNumber="34660666706" 
         message="Hola! Me interesa RestoWeb Pro para mi restaurante"
       />
 

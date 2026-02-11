@@ -7,7 +7,7 @@ import { Section } from '../ui/Section';
 
 export const HeroSection = () => {
   const handleContactClick = () => {
-    const phone = '34600000000'; // Cambiar por el número real
+    const phone = '34660666706';
     const message = 'Hola! Quiero mi web profesional para mi restaurante';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

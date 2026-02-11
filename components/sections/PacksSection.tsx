@@ -7,7 +7,7 @@ import { Button } from '../ui/Button';
 
 export const PacksSection = () => {
   const handleContactClick = (packName: string) => {
-    const phone = '34600000000'; // Cambiar por el número real
+    const phone = '34660666706';
     const message = `Hola! Me interesa el ${packName} de RestoWeb Pro`;
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

@@ -7,7 +7,7 @@ import { Button } from '../ui/Button';
 
 export const CTASection = () => {
   const handleContactClick = () => {
-    const phone = '34600000000'; // Cambiar por el número real
+    const phone = '34660666706';
     const message = 'Hola! Quiero más información sobre RestoWeb Pro';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

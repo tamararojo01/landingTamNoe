@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { Logo } from '../ui/Logo';
 
 /**
  * Header - Navegación principal de la landing page
@@ -66,11 +67,12 @@ export const Header = () => {
           {/* Logo/Brand */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-2 group"
+            className="flex items-center group"
           >
-            <div className="text-xl md:text-2xl font-bold text-secondary-900">
+            <Logo variant="dark" size="sm" showText={false} />
+            <span className="ml-3 text-lg md:text-xl font-bold text-secondary-900">
               Sherfand Trade
-            </div>
+            </span>
           </button>
 
           {/* Desktop Navigation */}

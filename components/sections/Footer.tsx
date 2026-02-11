@@ -48,8 +48,11 @@ export const Footer = () => {
                 PROFESSIONAL SERVICES
               </p>
             </div>
+            <p className="text-secondary-300 leading-relaxed text-sm max-w-xs font-medium mb-4">
+              Sherfand Trade — Webs y fotografía profesional para negocios locales.
+            </p>
             <p className="text-secondary-400 leading-relaxed text-sm max-w-xs">
-              Webs y fotografía profesional para negocios locales. Especialistas en restaurantes.
+              Especialistas en soluciones digitales para restaurantes y comercios físicos.
             </p>
             
             {/* Redes sociales */}

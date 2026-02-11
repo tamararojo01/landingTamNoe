@@ -1,5 +1,6 @@
 import { Header } from '@/components/sections/Header';
 import { HeroSection } from '@/components/sections/HeroSection';
+import { QuienesSomosSection } from '@/components/sections/QuienesSomosSection';
 import { OfrecemosSection } from '@/components/sections/OfrecemosSection';
 import { BeneficiosSection } from '@/components/sections/BeneficiosSection';
 import { SectoresSection } from '@/components/sections/SectoresSection';
@@ -25,8 +26,9 @@ export default function Home() {
           message="Hola! Quiero solicitar presupuesto para mi negocio"
         />
 
-        {/* Main Content - Profesional y escalable */}
+        {/* Main Content - Empresa sólida y profesional */}
         <HeroSection />
+        <QuienesSomosSection />
         <BeneficiosSection />
         <SectoresSection />
         <ComoFuncionaSection />

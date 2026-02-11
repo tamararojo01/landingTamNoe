@@ -30,23 +30,23 @@ export const BeneficiosSection = () => {
   const beneficios = [
     {
       icon: TrendingUp,
-      title: 'Más clientes y reservas desde tu web',
-      description: 'Diseño optimizado para convertir visitantes en clientes reales. Formularios de contacto eficaces y sistema de reservas integrado.',
+      title: 'Especialistas en negocios físicos',
+      description: 'Conocemos las necesidades específicas de restaurantes y comercios locales. Experiencia probada en conversión de visitas a clientes reales.',
     },
     {
       icon: Camera,
-      title: 'Fotografía profesional que aumenta conversiones',
-      description: 'Sesión de fotos con fotógrafo experto incluida. Imágenes de alta calidad que muestran tu negocio en su mejor versión.',
+      title: 'Web + fotografía en un solo servicio',
+      description: 'Solución completa integrada. Diseño web profesional y sesión fotográfica incluida. Todo coordinado por un solo equipo.',
     },
     {
       icon: Smartphone,
-      title: 'Diseño moderno, rápido y optimizado para móvil',
-      description: 'Web perfecta en todos los dispositivos. Carga rápida y optimizada para buscadores. El 85% de clientes buscan desde el móvil.',
+      title: 'Entrega rápida y soporte cercano',
+      description: 'Tu web lista en días, no meses. Soporte personalizado en español. Siempre disponibles para cambios y consultas.',
     },
     {
       icon: Settings,
-      title: 'Soporte real de empresa profesional',
-      description: 'Equipo de Sherfand Trade disponible para resolver dudas y hacer cambios. Trato personalizado y cercano cuando lo necesites.',
+      title: 'Imagen profesional orientada a conversión',
+      description: 'No solo diseño bonito. Cada elemento optimizado para convertir visitantes en clientes. Enfoque 100% en resultados.',
     },
   ];
 

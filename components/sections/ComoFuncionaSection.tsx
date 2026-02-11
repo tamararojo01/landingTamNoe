@@ -6,7 +6,7 @@ import { Section } from '../ui/Section';
  * Cómo Trabajamos Section - Proceso en 3 pasos
  * 
  * Características:
- * - 3 pasos claros con iconos descriptivos
+ * - 3 pasos claros con iconos descriptivos de SherfandTrade
  * - Diseño con líneas conectoras entre pasos (desktop)
  * - Números destacados en badge
  * - Responsive: 1 columna en móvil, 3 columnas en desktop
@@ -21,22 +21,22 @@ export const ComoFuncionaSection = () => {
     {
       number: '01',
       icon: MessageCircle,
-      title: 'Contacta y cuéntanos tu restaurante',
-      description: 'Conversación breve por WhatsApp o teléfono. Nos cuentas sobre tu restaurante, tu cocina y qué quieres transmitir. Sin compromisos.',
+      title: 'Cuéntanos tu negocio',
+      description: 'Brief rápido por WhatsApp o teléfono. Nos cuentas sobre tu negocio, tus objetivos y qué quieres transmitir. Sin compromisos ni letra pequeña.',
       color: 'from-primary-500 to-primary-600',
     },
     {
       number: '02',
       icon: Palette,
-      title: 'Creamos tu web y fotos profesionales',
-      description: 'Diseñamos tu web moderna y visitamos tu local para la sesión de fotos. Tú te enfocas en tu negocio, nosotros en lo técnico.',
+      title: 'Diseñamos tu web y realizamos la sesión de fotos',
+      description: 'Nuestro equipo de SherfandTrade diseña tu web profesional y visitamos tu local para la sesión fotográfica. Tú te enfocas en tu negocio.',
       color: 'from-primary-600 to-primary-700',
     },
     {
       number: '03',
       icon: Rocket,
-      title: 'Lanza y atrae más clientes',
-      description: 'Publicamos tu web optimizada para Google. En 7 días estás online recibiendo consultas, reservas y nuevos clientes cada día.',
+      title: 'Publicamos tu web y empiezas a recibir clientes',
+      description: 'Lanzamos tu web optimizada para Google y móviles. En 7 días estás online recibiendo consultas, reservas y nuevos clientes cada día.',
       color: 'from-primary-700 to-primary-800',
     },
   ];

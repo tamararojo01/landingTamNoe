@@ -9,32 +9,32 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://restowebpro.com"),
+  metadataBase: new URL("https://sherfandtrade.com"),
   title: {
-    default: "RestoWeb Pro - Webs y Fotos Profesionales para Restaurantes | Atraer Más Clientes",
-    template: "%s | RestoWeb Pro",
+    default: "SherfandTrade - Webs y Fotografía Profesional para Negocios Locales | Especialistas en Restaurantes",
+    template: "%s | SherfandTrade",
   },
   description:
-    "Webs profesionales y fotografía de calidad que atraen más clientes para tu restaurante. Diseño moderno, optimizado para móvil y SEO. Desde 199€.",
+    "SherfandTrade ofrece webs y fotografía profesional para negocios locales. Especialistas en restaurantes. Consigue más clientes con diseño moderno y fotos que venden. Desde 199€.",
   keywords: [
-    "web para restaurantes",
+    "webs para negocios locales",
     "diseño web restaurantes",
-    "fotos profesionales restaurante",
-    "fotografía gastronómica",
+    "fotografía profesional negocios",
+    "SherfandTrade",
     "web restaurante moderna",
-    "aumentar clientes restaurante",
-    "marketing restaurantes",
-    "SEO restaurantes",
-    "página web restaurante",
-    "reservas online restaurante",
-    "web restaurante móvil",
-    "web restaurante barata",
-    "diseño profesional restaurante",
-    "fotos comida profesional",
+    "aumentar clientes negocio",
+    "fotos profesionales restaurante",
+    "web peluquería",
+    "web clínica",
+    "web gimnasio",
+    "web centro estética",
+    "marketing negocios locales",
+    "SEO negocios locales",
+    "web profesional económica",
   ],
-  authors: [{ name: "RestoWeb Pro" }],
-  creator: "RestoWeb Pro",
-  publisher: "RestoWeb Pro",
+  authors: [{ name: "SherfandTrade" }],
+  creator: "SherfandTrade",
+  publisher: "SherfandTrade",
   formatDetection: {
     email: false,
     address: false,
@@ -43,27 +43,27 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://restowebpro.com",
-    title: "Webs y Fotos Profesionales que Atraen Más Clientes | RestoWeb Pro",
+    url: "https://sherfandtrade.com",
+    title: "SherfandTrade - Webs y Fotografía Profesional para Negocios Locales",
     description:
-      "Transforma tu restaurante con diseño web moderno y fotos irresistibles. Optimizado para móvil y SEO. Más de 50 restaurantes confiaron en nosotros.",
-    siteName: "RestoWeb Pro",
+      "Webs profesionales y fotografía de calidad para negocios locales. Especialistas en restaurantes. Consigue más clientes con SherfandTrade.",
+    siteName: "SherfandTrade",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "RestoWeb Pro - Webs y Fotos Profesionales para Restaurantes",
+        alt: "SherfandTrade - Webs y Fotografía Profesional para Negocios Locales",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webs y Fotos Profesionales para Restaurantes | RestoWeb Pro",
+    title: "SherfandTrade - Webs y Fotografía Profesional para Negocios Locales",
     description:
-      "Diseño web moderno + fotografía profesional que atraen más clientes. Optimizado para móvil y SEO.",
+      "Diseño web moderno + fotografía profesional para restaurantes y negocios locales. Consigue más clientes con SherfandTrade.",
     images: ["/og-image.jpg"],
-    creator: "@restowebpro",
+    creator: "@sherfandtrade",
   },
   robots: {
     index: true,
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   alternates: {
-    canonical: "https://restowebpro.com",
+    canonical: "https://sherfandtrade.com",
   },
 };
 
@@ -95,7 +95,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={inter.variable}>
       <head>
-        <link rel="canonical" href="https://restowebpro.com" />
+        <link rel="canonical" href="https://sherfandtrade.com" />
       </head>
       <body className={`${inter.className} antialiased`}>
         {children}

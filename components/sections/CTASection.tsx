@@ -11,7 +11,7 @@ import { Button } from '../ui/Button';
  * Características:
  * - Botón grande y destacado con azul eléctrico
  * - Animación hover para llamar atención
- * - Copy persuasivo final
+ * - Copy persuasivo final de SherfandTrade
  * - Fondo degradado para destacar la sección
  * 
  * Para modificar en el futuro:
@@ -22,7 +22,7 @@ import { Button } from '../ui/Button';
 export const CTASection = () => {
   const handleContactClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Quiero solicitar mi web + fotos profesionales';
+    const message = 'Hola! Quiero solicitar presupuesto en SherfandTrade';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -35,11 +35,11 @@ export const CTASection = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10 animate-fade-in">
         {/* Headline fuerte */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-900 mb-6 leading-tight">
-          ¿Listo para atraer más clientes?
+          ¿Listo para conseguir más clientes con una web profesional?
         </h2>
 
         <p className="text-xl md:text-2xl text-secondary-700 mb-10 font-medium max-w-2xl mx-auto">
-          Solicita tu web + fotos profesionales hoy y empieza a recibir más reservas en menos de 7 días
+          Solicita presupuesto en <span className="font-bold text-primary-600">SherfandTrade</span> y empieza a recibir más clientes en menos de 7 días
         </p>
 
         {/* CTA Principal - Botón grande con azul eléctrico */}
@@ -49,7 +49,7 @@ export const CTASection = () => {
             onClick={handleContactClick}
             className="text-xl px-14 py-7 bg-primary-600 hover:bg-primary-700 shadow-2xl hover:shadow-primary-500/50 transform hover:scale-110 transition-all duration-300 animate-pulse"
           >
-            Solicita tu web + fotos hoy <ArrowRight size={26} className="ml-2" />
+            Solicitar presupuesto en SherfandTrade <ArrowRight size={26} className="ml-2" />
           </Button>
         </div>
 
@@ -66,7 +66,7 @@ export const CTASection = () => {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-green-500 text-xl">✓</span>
-              <span className="text-secondary-700 font-medium">Garantía de satisfacción</span>
+              <span className="text-secondary-700 font-medium">Trato profesional</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-green-500 text-xl">✓</span>
@@ -77,7 +77,7 @@ export const CTASection = () => {
 
         {/* Social proof final */}
         <p className="text-sm text-secondary-600 mt-8">
-          👥 Más de 50 restaurantes ya confiaron en nosotros · ⭐ 4.9/5 de valoración
+          👥 Más de 50 negocios ya confiaron en SherfandTrade · ⭐ 4.9/5 de valoración
         </p>
       </div>
     </Section>

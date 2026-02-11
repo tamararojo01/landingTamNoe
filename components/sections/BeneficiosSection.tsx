@@ -23,33 +23,33 @@ import { Button } from '../ui/Button';
 export const BeneficiosSection = () => {
   const handleContactClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Quiero mi web + fotos profesionales para mi restaurante';
+    const message = 'Hola! Quiero solicitar presupuesto con SherfandTrade';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const beneficios = [
     {
       icon: TrendingUp,
-      title: 'Más reservas con una web moderna y atractiva',
-      description: 'Diseño profesional optimizado para convertir visitantes en clientes. Botones de reserva visibles, proceso simple y rápido que genera confianza.',
+      title: 'Más clientes y reservas desde tu web',
+      description: 'Diseño optimizado para convertir visitantes en clientes reales. Tu negocio visible 24/7 con formularios de contacto que funcionan y reservas online efectivas.',
       color: 'from-primary-500 to-primary-600',
     },
     {
       icon: Camera,
-      title: 'Fotografía profesional que vende tu comida',
-      description: 'Sesión de fotos incluida con fotógrafo experto. Imágenes de alta calidad que abren el apetito y muestran tus platos en su mejor versión.',
+      title: 'Fotografía profesional que aumenta conversiones',
+      description: 'Sesión de fotos con fotógrafo experto incluida. Imágenes de alta calidad editadas y optimizadas que muestran tu negocio en su mejor versión y generan confianza.',
       color: 'from-primary-600 to-primary-700',
     },
     {
-      icon: Settings,
-      title: 'Fácil de gestionar y actualizar',
-      description: 'Panel simple para editar menú, horarios y promociones. No necesitas conocimientos técnicos. Actualizaciones rápidas cuando lo necesites.',
+      icon: Smartphone,
+      title: 'Diseño moderno, rápido y optimizado para móvil',
+      description: 'El 85% de clientes buscan desde el móvil. Tu web se ve perfecta en todos los dispositivos, carga rápido y está optimizada para aparecer en Google.',
       color: 'from-primary-500 to-primary-600',
     },
     {
-      icon: Smartphone,
-      title: 'Optimizado para móvil y SEO básico',
-      description: 'El 85% de clientes buscan desde el móvil. Tu web se ve perfecta en todos los dispositivos y está optimizada para aparecer en Google.',
+      icon: Settings,
+      title: 'Soporte real y trato cercano de empresa profesional',
+      description: 'No estás solo. Equipo profesional de SherfandTrade disponible para resolver dudas, hacer cambios y ayudarte a crecer. Trato personalizado y cercano.',
       color: 'from-primary-600 to-primary-700',
     },
   ];
@@ -58,14 +58,14 @@ export const BeneficiosSection = () => {
     <Section background="white" id="beneficios">
       <div className="text-center mb-16 animate-fade-in">
         <span className="inline-block bg-primary-100 text-primary-700 px-5 py-2.5 rounded-full text-sm font-bold mb-6">
-          ✨ Beneficios del servicio
+          ✨ Por qué SherfandTrade
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-900 mb-6">
-          Todo lo que necesitas para destacar online
+          Todo lo que tu negocio necesita para crecer online
         </h2>
         <p className="text-lg md:text-xl text-secondary-600 max-w-3xl mx-auto">
-          No solo creamos una web bonita. Te entregamos una{' '}
-          <span className="font-bold text-primary-600">herramienta completa</span> para atraer más clientes
+          No solo creamos webs bonitas. Te entregamos una{' '}
+          <span className="font-bold text-primary-600">solución completa profesional</span> para atraer más clientes
         </p>
       </div>
 
@@ -109,10 +109,10 @@ export const BeneficiosSection = () => {
           onClick={handleContactClick}
           className="text-lg px-10 py-6 bg-primary-600 hover:bg-primary-700 shadow-xl hover:shadow-primary-500/50 transform hover:scale-105 transition-all"
         >
-          Quiero mi web + fotos ahora
+          Solicitar presupuesto ahora
         </Button>
         <p className="text-sm text-secondary-600 mt-4">
-          💬 Respuesta en menos de 24h · ⚡ Sin compromiso · ✅ Garantía de satisfacción
+          💬 Respuesta en menos de 24h · ⚡ Sin compromiso · ✅ Trato profesional y cercano
         </p>
       </div>
     </Section>

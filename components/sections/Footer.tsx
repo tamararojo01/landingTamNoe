@@ -7,6 +7,7 @@ import { Mail, Phone, Instagram, Facebook, Linkedin } from 'lucide-react';
  * Footer - Pie de página con información de contacto y legales
  * 
  * Características:
+ * - Branding "SherfandTrade" destacado
  * - Diseño minimalista y limpio
  * - Información de contacto (email y teléfono)
  * - Enlaces a redes sociales con iconos
@@ -23,12 +24,12 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:info@restowebpro.com';
+    window.location.href = 'mailto:info@sherfandtrade.com';
   };
 
   const handleWhatsAppClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Me gustaría obtener más información sobre el servicio';
+    const message = 'Hola! Me gustaría obtener más información sobre SherfandTrade';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -40,16 +41,16 @@ export const Footer = () => {
           {/* Branding y descripción */}
           <div>
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary-400 to-primary-500 bg-clip-text text-transparent">
-              RestoWeb Pro
+              SherfandTrade
             </h3>
             <p className="text-secondary-300 leading-relaxed mb-6">
-              Webs profesionales y fotografía de calidad para restaurantes que quieren atraer más clientes.
+              SherfandTrade — Webs y fotografía profesional para negocios locales. Especialistas en restaurantes.
             </p>
             
             {/* Redes sociales - iconos minimalistas */}
             <div className="flex gap-3">
               <a
-                href="https://instagram.com/restowebpro"
+                href="https://instagram.com/sherfandtrade"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-secondary-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -58,7 +59,7 @@ export const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://facebook.com/restowebpro"
+                href="https://facebook.com/sherfandtrade"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-secondary-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -67,7 +68,7 @@ export const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a
-                href="https://linkedin.com/company/restowebpro"
+                href="https://linkedin.com/company/sherfandtrade"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-secondary-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -86,13 +87,13 @@ export const Footer = () => {
                 <button
                   onClick={handleEmailClick}
                   className="flex items-center gap-3 text-secondary-300 hover:text-primary-400 transition-colors group w-full text-left"
-                  aria-label="Enviar email a info@restowebpro.com"
+                  aria-label="Enviar email a info@sherfandtrade.com"
                 >
                   <Mail
                     size={20}
                     className="text-primary-500 group-hover:text-primary-400 flex-shrink-0"
                   />
-                  <span>info@restowebpro.com</span>
+                  <span>info@sherfandtrade.com</span>
                 </button>
               </li>
               <li>
@@ -155,7 +156,7 @@ export const Footer = () => {
         <div className="border-t border-secondary-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-secondary-400">
             <p className="text-center md:text-left">
-              © {currentYear} RestoWeb Pro. Todos los derechos reservados.
+              © {currentYear} SherfandTrade. Todos los derechos reservados.
             </p>
             
             {/* Enlaces legales */}

@@ -16,6 +16,7 @@ export const PacksSection = () => {
     {
       name: 'Pack Básico',
       price: '199',
+      originalPrice: '299',
       description: 'Perfecto para empezar tu presencia online',
       features: [
         'Web responsive de una página',
@@ -32,6 +33,7 @@ export const PacksSection = () => {
     {
       name: 'Pack Premium',
       price: '349',
+      originalPrice: '449',
       description: 'La solución completa para destacar al máximo',
       features: [
         'Web responsive multipágina',
@@ -54,11 +56,18 @@ export const PacksSection = () => {
   return (
     <Section background="gradient" id="packs">
       <div className="text-center mb-12 md:mb-16">
+        {/* Badge de Oferta */}
+        <div className="inline-block mb-4">
+          <span className="bg-green-500 text-white px-5 py-2 rounded-full text-sm font-bold animate-pulse">
+            🚀 OFERTA DE LANZAMIENTO - Precios especiales
+          </span>
+        </div>
+        
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-900 mb-4">
           Elige tu pack
         </h2>
         <p className="text-lg md:text-xl text-secondary-600 max-w-2xl mx-auto">
-          Inversión única. Sin pagos mensuales ocultos. Todo incluido
+          <span className="font-bold text-primary-600">¡Hasta 100€ de descuento!</span> Inversión única. Sin pagos mensuales. Todo incluido
         </p>
       </div>
 
@@ -84,12 +93,35 @@ export const PacksSection = () => {
               <h3 className="text-2xl md:text-3xl font-bold text-secondary-900 mb-2">
                 {pack.name}
               </h3>
-              <p className="text-secondary-600 mb-6">{pack.description}</p>
-              <div className="flex items-baseline justify-center gap-2">
-                <span className="text-5xl md:text-6xl font-bold text-primary-600">
-                  {pack.price}€
+              <p className="text-secondary-600 mb-4">{pack.description}</p>
+              
+              {/* Badge de Oferta */}
+              <div className="mb-4">
+                <span className="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold">
+                  🎉 Oferta de Lanzamiento
                 </span>
-                <span className="text-secondary-500">pago único</span>
+              </div>
+
+              <div className="flex flex-col items-center justify-center gap-2 mb-2">
+                {/* Precio Original Tachado */}
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl font-semibold text-secondary-400 line-through">
+                    {pack.originalPrice}€
+                  </span>
+                </div>
+                
+                {/* Precio de Oferta */}
+                <div className="flex items-baseline justify-center gap-2">
+                  <span className="text-5xl md:text-6xl font-bold text-primary-600">
+                    {pack.price}€
+                  </span>
+                  <span className="text-secondary-500">pago único</span>
+                </div>
+                
+                {/* Ahorro */}
+                <span className="text-green-600 font-semibold text-sm">
+                  ¡Ahorras {parseInt(pack.originalPrice) - parseInt(pack.price)}€!
+                </span>
               </div>
             </div>
 

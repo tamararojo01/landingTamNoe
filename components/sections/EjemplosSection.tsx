@@ -11,14 +11,14 @@ export const EjemplosSection = () => {
       name: 'Demo Pack Básico',
       type: 'Pack Básico',
       description: 'Web de una página con carta digital, fotos profesionales y botón de contacto directo.',
-      url: '#demo-basico',
+      url: 'https://demo-restaurante-three.vercel.app/',
       image: 'bg-gradient-to-br from-blue-100 to-blue-200',
     },
     {
       name: 'Demo Pack Premium',
       type: 'Pack Premium',
       description: 'Web completa con galería, blog, formulario de reservas y optimización SEO avanzada.',
-      url: '#demo-premium',
+      url: 'https://demo-restaurante-premium.vercel.app/',
       image: 'bg-gradient-to-br from-purple-100 to-purple-200',
     },
   ];

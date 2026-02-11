@@ -1,0 +1,21 @@
+{
+  "name": "RestoWeb Pro",
+  "short_name": "RestoWeb",
+  "description": "Webs + Fotos Profesionales para Restaurantes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d3321e",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

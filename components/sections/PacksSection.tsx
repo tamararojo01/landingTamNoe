@@ -140,23 +140,59 @@ export const PacksSection = () => {
             <Button
               variant={pack.popular ? 'primary' : 'secondary'}
               size="lg"
-              className="w-full"
+              className="w-full mb-4"
               onClick={() => handleContactClick(pack.name)}
             >
               {pack.cta}
             </Button>
+            
+            {/* Microcopy para reducir fricción */}
+            <div className="space-y-2 text-center text-sm text-secondary-600">
+              <p className="flex items-center justify-center gap-2">
+                <span className="text-green-500">✓</span>
+                <span>Sin compromiso · Solo pagas si te convence</span>
+              </p>
+              <p className="flex items-center justify-center gap-2">
+                <span className="text-green-500">✓</span>
+                <span>Fácil de empezar · Te guiamos paso a paso</span>
+              </p>
+            </div>
           </div>
         ))}
       </div>
 
-      <div className="text-center mt-12">
-        <p className="text-secondary-600">
+      {/* Garantías y confianza */}
+      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 max-w-3xl mx-auto mt-12 shadow-lg">
+        <h3 className="text-xl font-bold text-center text-secondary-900 mb-6">
+          💯 Garantías que te protegen
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div>
+            <div className="text-3xl mb-2">✅</div>
+            <div className="font-semibold text-secondary-900 mb-1">100% Satisfacción</div>
+            <div className="text-sm text-secondary-600">Si no te gusta, te devolvemos tu dinero</div>
+          </div>
+          <div>
+            <div className="text-3xl mb-2">🔒</div>
+            <div className="font-semibold text-secondary-900 mb-1">Pago Seguro</div>
+            <div className="text-sm text-secondary-600">Tus datos protegidos siempre</div>
+          </div>
+          <div>
+            <div className="text-3xl mb-2">⚡</div>
+            <div className="font-semibold text-secondary-900 mb-1">Entrega 7 Días</div>
+            <div className="text-sm text-secondary-600">O te compensamos por la espera</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-center mt-8">
+        <p className="text-secondary-600 text-lg">
           ¿Necesitas algo personalizado?{' '}
           <button
             onClick={() => handleContactClick('solución personalizada')}
-            className="text-primary-600 font-semibold hover:underline"
+            className="text-primary-600 font-bold hover:underline"
           >
-            Contáctanos
+            Contáctanos sin compromiso →
           </button>
         </p>
       </div>

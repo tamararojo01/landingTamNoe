@@ -11,20 +11,26 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://restowebpro.com"),
   title: {
-    default: "RestoWeb Pro - Webs + Fotos Profesionales para Restaurantes",
+    default: "RestoWeb Pro - Aumenta las Reservas de tu Restaurante en 7 Días | Web + Fotos Profesionales",
     template: "%s | RestoWeb Pro",
   },
   description:
-    "Aumenta las reservas de tu restaurante en menos de 7 días. Web profesional + sesión de fotos de tus platos y local. Todo listo para recibir más clientes. Desde 299€.",
+    "¿Tu restaurante no recibe suficientes reservas? Web profesional + fotografía de tus platos desde 199€. Multiplica tus reservas online en menos de 7 días. Sin complicaciones. Sin pagos mensuales.",
   keywords: [
+    "reservas online restaurante",
+    "web restaurante",
+    "aumentar reservas restaurante",
     "web para restaurantes",
-    "fotos profesionales restaurante",
     "diseño web restaurantes",
-    "marketing restaurantes",
-    "reservas online",
-    "SEO local restaurantes",
+    "fotos profesionales restaurante",
     "fotografía gastronómica",
-    "web responsiva restaurantes",
+    "SEO local restaurantes",
+    "marketing restaurantes",
+    "más clientes restaurante",
+    "página web restaurante barata",
+    "web restaurante rápida",
+    "visibilidad online restaurante",
+    "Google Maps restaurante",
   ],
   authors: [{ name: "RestoWeb Pro" }],
   creator: "RestoWeb Pro",
@@ -38,24 +44,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_ES",
     url: "https://restowebpro.com",
-    title: "RestoWeb Pro - Webs + Fotos Profesionales para Restaurantes",
+    title: "Aumenta las Reservas de tu Restaurante en 7 Días | RestoWeb Pro",
     description:
-      "Aumenta las reservas de tu restaurante en menos de 7 días. Web profesional + sesión de fotos. Desde 299€.",
+      "Web profesional + fotos que venden. Multiplica tus reservas online desde 199€. Sin complicaciones, sin pagos mensuales. Más de 50 restaurantes ya confían en nosotros.",
     siteName: "RestoWeb Pro",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "RestoWeb Pro - Webs para Restaurantes",
+        alt: "RestoWeb Pro - Web + Fotos para Restaurantes",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "RestoWeb Pro - Webs + Fotos Profesionales para Restaurantes",
+    title: "Aumenta las Reservas de tu Restaurante en 7 Días | RestoWeb Pro",
     description:
-      "Aumenta las reservas de tu restaurante en menos de 7 días. Web profesional + sesión de fotos. Desde 299€.",
+      "Web profesional + fotos de tus platos. Multiplica tus reservas desde 199€. Listo en 7 días.",
     images: ["/og-image.jpg"],
     creator: "@restowebpro",
   },
@@ -76,6 +82,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "https://restowebpro.com",
+  },
 };
 
 export default function RootLayout({

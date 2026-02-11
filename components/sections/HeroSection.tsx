@@ -23,7 +23,7 @@ import { Section } from '../ui/Section';
 export const HeroSection = () => {
   const handleContactClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Quiero solicitar mi web profesional con Sherfand Trade';
+    const message = 'Hola! Quiero conseguir mi web + fotos profesionales';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -33,38 +33,43 @@ export const HeroSection = () => {
 
   return (
     <Section background="white" className="pt-40 md:pt-48 pb-24 md:pb-32">
-      <div className="max-w-6xl mx-auto text-center">
-        {/* Título Principal - Corporativo y de alto impacto */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-900 mb-8 leading-tight tracking-tight">
-          Webs profesionales y fotografía estratégica para negocios locales
+      <div className="max-w-5xl mx-auto text-center">
+        {/* Título Principal - Máximo impacto, 12 palabras */}
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-900 mb-6 leading-tight">
+          Web + Fotos Profesionales para tu Restaurante
         </h1>
 
-        {/* Subtítulo - Especialización clara */}
-        <p className="text-xl md:text-2xl text-secondary-600 mb-8 font-light">
-          Especialistas en soluciones digitales para restaurantes — SherfandTrade
+        {/* Subtítulo - Beneficio claro, 20 palabras */}
+        <p className="text-xl md:text-2xl text-secondary-600 mb-10 font-light max-w-3xl mx-auto">
+          Atrae más clientes con una web moderna y fotografía que vende. Todo listo en 7 días.
         </p>
 
-        {/* Línea de confianza */}
-        <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-sm md:text-base text-secondary-700 mb-16">
-          <div className="flex items-center gap-2">
-            <span className="text-yellow-500">⭐</span>
-            <span className="font-medium">Más de 30 proyectos realizados</span>
+        {/* 3 Bullets de valor concreto */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-12 text-base md:text-lg text-secondary-700">
+          <div className="flex items-center gap-2 font-medium">
+            <span className="text-green-600 text-2xl">✓</span>
+            <span>Web lista en 7 días</span>
           </div>
-          <span className="text-secondary-400">·</span>
-          <span>Atención personalizada</span>
-          <span className="text-secondary-400">·</span>
-          <span>Entrega profesional</span>
+          <div className="flex items-center gap-2 font-medium">
+            <span className="text-green-600 text-2xl">✓</span>
+            <span>Incluye sesión de fotos</span>
+          </div>
+          <div className="flex items-center gap-2 font-medium">
+            <span className="text-green-600 text-2xl">✓</span>
+            <span>Desde 249€ todo incluido</span>
+          </div>
         </div>
 
-        {/* CTA Principal - Sólido y directo */}
-        <div className="mb-20">
+        {/* CTA Principal - Accionable y destacado */}
+        <div className="mb-16">
           <Button
             size="lg"
             onClick={handleContactClick}
-            className="px-12 py-5 text-lg bg-primary-600 hover:bg-primary-700 shadow-md hover:shadow-lg transition-all duration-200"
+            className="px-16 py-6 text-xl font-bold bg-primary-600 hover:bg-primary-700 shadow-2xl hover:shadow-3xl transition-all duration-200 transform hover:scale-105"
           >
-            Solicitar presupuesto
+            Consigue web + fotos ahora
           </Button>
+          <p className="text-sm text-secondary-500 mt-4">⭐ Más de 30 proyectos entregados · Valoración 4.9/5</p>
         </div>
 
         {/* Social Proof discreto */}

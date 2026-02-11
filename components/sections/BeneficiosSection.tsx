@@ -30,23 +30,23 @@ export const BeneficiosSection = () => {
   const beneficios = [
     {
       icon: TrendingUp,
-      title: 'Especialistas en negocios físicos',
-      description: 'Conocemos las necesidades específicas de restaurantes y comercios locales. Experiencia probada en conversión de visitas a clientes reales.',
+      title: 'Especialistas en restaurantes',
+      description: 'Conocemos tu negocio. Convertimos visitas web en clientes reales.',
     },
     {
       icon: Camera,
-      title: 'Web + fotografía en un solo servicio',
-      description: 'Solución completa integrada. Diseño web profesional y sesión fotográfica incluida. Todo coordinado por un solo equipo.',
+      title: 'Web + fotos incluidas',
+      description: 'Todo en un solo pack. Diseño profesional y sesión fotográfica completa.',
     },
     {
       icon: Smartphone,
-      title: 'Entrega rápida y soporte cercano',
-      description: 'Tu web lista en días, no meses. Soporte personalizado en español. Siempre disponibles para cambios y consultas.',
+      title: 'Listo en 7 días',
+      description: 'Entrega rápida garantizada. Soporte personalizado siempre disponible.',
     },
     {
       icon: Settings,
-      title: 'Imagen profesional orientada a conversión',
-      description: 'No solo diseño bonito. Cada elemento optimizado para convertir visitantes en clientes. Enfoque 100% en resultados.',
+      title: 'Diseño que convierte',
+      description: 'Cada elemento optimizado para vender. Enfoque total en resultados.',
     },
   ];
 
@@ -54,10 +54,10 @@ export const BeneficiosSection = () => {
     <Section background="white" id="beneficios" className="py-20 md:py-28">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-900 mb-6">
-          Por qué elegirnos
+          Por qué nos eligen
         </h2>
         <p className="text-lg md:text-xl text-secondary-600 max-w-2xl mx-auto">
-          Una solución completa profesional para atraer más clientes
+          Solución completa para atraer más clientes a tu restaurante
         </p>
       </div>
 

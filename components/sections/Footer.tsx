@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Mail, Phone, Instagram, Facebook, Linkedin } from 'lucide-react';
-import { Logo } from '../ui/Logo';
 
 /**
  * Footer - Pie de página con información de contacto y legales
@@ -41,8 +40,13 @@ export const Footer = () => {
           
           {/* Branding y descripción */}
           <div>
-            <div className="mb-6">
-              <Logo variant="light" size="md" showText={true} />
+            <div className="mb-4">
+              <h3 className="text-xl font-bold text-white tracking-wider">
+                SHERFAND TRADE
+              </h3>
+              <p className="text-xs text-secondary-400 tracking-widest mt-1">
+                PROFESSIONAL SERVICES
+              </p>
             </div>
             <p className="text-secondary-400 leading-relaxed text-sm max-w-xs">
               Webs y fotografía profesional para negocios locales. Especialistas en restaurantes.

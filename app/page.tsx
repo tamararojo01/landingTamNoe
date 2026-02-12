@@ -23,7 +23,7 @@ export default function Home() {
       <main className="min-h-screen bg-white">
         {/* WhatsApp Floating Button */}
         <WhatsAppButton 
-          phoneNumber="34660666706" 
+          phoneNumber="694278962" 
           message="Hola! Quiero solicitar presupuesto para mi negocio"
         />
 

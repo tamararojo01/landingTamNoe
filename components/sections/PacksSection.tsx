@@ -7,7 +7,7 @@ import { Button } from '../ui/Button';
 
 export const PacksSection = () => {
   const handleContactClick = (packName: string) => {
-    const phone = '34660666706';
+    const phone = '694278962';
     const message = `Hola! Quiero una consulta gratis sobre el ${packName}`;
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
@@ -136,11 +136,8 @@ export const PacksSection = () => {
         </div>
       </div>
 
-      {/* CTA principal con urgencia */}
+      {/* CTA principal */}
       <div className="text-center mb-16">
-        <div className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full font-bold mb-6 animate-pulse shadow-lg">
-          🔥 Solo 5 webs a precio de lanzamiento este mes
-        </div>
         <div>
           <Button
             variant="primary"

@@ -28,7 +28,7 @@ export const Footer = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phone = '34660666706';
+    const phone = '694278962';
     const message = 'Hola! Me gustaría obtener más información sobre Sherfand Trade';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

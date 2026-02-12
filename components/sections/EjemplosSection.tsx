@@ -24,22 +24,24 @@ export const EjemplosSection = () => {
       icon: UtensilsCrossed,
       demos: [
         {
-          name: 'Restaurante Mediterráneo',
+          name: 'Demo Restaurante',
           type: 'Básico',
           price: '249€',
           description: 'Web de una página con carta digital, fotos de platos y botón WhatsApp integrado.',
           features: ['Carta digital', 'Fotos profesionales', 'Botón de reservas'],
           gradient: 'from-orange-50 to-orange-100',
           color: 'orange',
+          demoUrl: 'https://github.com/tamararojo01/demoRestaurante',
         },
         {
-          name: 'Asador Premium',
+          name: 'Restaurante Premium',
           type: 'Premium',
           price: '399€',
           description: 'Web completa con galería, sistema de reservas online y SEO optimizado.',
           features: ['Web multipágina', 'Reservas online', 'Blog de recetas', 'SEO avanzado'],
           gradient: 'from-red-50 to-red-100',
           color: 'red',
+          demoUrl: 'https://demo-restaurante-premium.vercel.app/',
         },
       ],
     },
@@ -214,19 +216,34 @@ export const EjemplosSection = () => {
               ))}
             </ul>
 
-            {/* CTA */}
-            <Button
-              variant="outline"
-              size="md"
-              className={`w-full bg-white hover:bg-gradient-to-r hover:from-${demo.color}-500 hover:to-${demo.color}-600 hover:text-white hover:border-transparent transition-all font-bold`}
-              onClick={() => {
-                const phone = '34660666706';
-                const message = `Hola! Me interesa el pack ${demo.type} para ${activeSector.name}`;
-                window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
-              }}
-            >
-              Solicitar este diseño <ExternalLink size={18} className="ml-2" />
-            </Button>
+            {/* CTAs */}
+            <div className="space-y-3">
+              {/* Botón Ver Demo (solo si hay demoUrl) */}
+              {(demo as any).demoUrl && (
+                <Button
+                  variant="primary"
+                  size="md"
+                  className="w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-bold shadow-md"
+                  onClick={() => window.open((demo as any).demoUrl, '_blank')}
+                >
+                  Ver demo en vivo <ExternalLink size={18} className="ml-2" />
+                </Button>
+              )}
+              
+              {/* Botón Solicitar */}
+              <Button
+                variant="outline"
+                size="md"
+                className={`w-full bg-white hover:bg-gradient-to-r hover:from-${demo.color}-500 hover:to-${demo.color}-600 hover:text-white hover:border-transparent transition-all font-bold`}
+                onClick={() => {
+                  const phone = '694278962';
+                  const message = `Hola! Me interesa el pack ${demo.type} para ${activeSector.name}`;
+                  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+                }}
+              >
+                Solicitar este diseño <ExternalLink size={18} className="ml-2" />
+              </Button>
+            </div>
           </div>
         ))}
       </div>

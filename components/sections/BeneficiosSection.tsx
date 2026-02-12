@@ -22,7 +22,7 @@ import { Button } from '../ui/Button';
  */
 export const BeneficiosSection = () => {
   const handleContactClick = () => {
-    const phone = '34660666706';
+    const phone = '694278962';
     const message = 'Hola! Quiero solicitar presupuesto con Sherfand Trade';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

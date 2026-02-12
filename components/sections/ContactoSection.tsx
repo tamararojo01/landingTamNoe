@@ -18,7 +18,7 @@ export const ContactoSection = () => {
     e.preventDefault();
     
     // Enviar a WhatsApp
-    const phone = '34660666706';
+    const phone = '694278962';
     const message = `Hola! Soy ${formData.nombre} del restaurante ${formData.restaurante}. Mi teléfono es ${formData.telefono}. Me interesa RestoWeb Pro.`;
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
     
@@ -34,7 +34,7 @@ export const ContactoSection = () => {
   };
 
   const handleWhatsAppDirect = () => {
-    const phone = '34660666706';
+    const phone = '694278962';
     const message = 'Hola! Quiero información sobre RestoWeb Pro';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
@@ -141,11 +141,11 @@ export const ContactoSection = () => {
                 </button>
 
                 <a
-                  href="tel:+34660666706"
+                  href="tel:+34694278962"
                   className="w-full flex items-center justify-center gap-3 bg-primary-600 hover:bg-primary-700 text-white px-6 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
                 >
                   <Phone size={24} />
-                  <span>+34 660 666 706</span>
+                  <span>+34 694 278 962</span>
                 </a>
 
                 <a

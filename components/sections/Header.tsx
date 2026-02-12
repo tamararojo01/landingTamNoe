@@ -25,7 +25,7 @@ export const Header = () => {
   }, []);
 
   const handleCTAClick = () => {
-    const phone = '34660666706';
+    const phone = '694278962';
     const message = 'Hola! Quiero una consulta gratis sobre mi web profesional';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

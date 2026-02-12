@@ -31,7 +31,7 @@ export const EjemplosSection = () => {
           features: ['Carta digital', 'Fotos profesionales', 'Botón de reservas'],
           gradient: 'from-orange-50 to-orange-100',
           color: 'orange',
-          demoUrl: 'https://github.com/tamararojo01/demoRestaurante',
+          demoUrl: 'https://demo-restaurante-three.vercel.app/',
         },
         {
           name: 'Restaurante Premium',

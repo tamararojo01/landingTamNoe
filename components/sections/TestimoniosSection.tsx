@@ -19,103 +19,118 @@ import { Section } from '../ui/Section';
 export const TestimoniosSection = () => {
   const testimonios = [
     {
-      name: 'María López',
-      business: 'Restaurante La Terraza del Mar',
-      businessType: 'Restaurante',
-      location: 'Barcelona',
-      rating: 5,
-      result: '+40% reservas en 2 meses',
-      text: 'En solo 2 semanas teníamos nuestra web funcionando. Las fotos profesionales son espectaculares y las reservas han aumentado un 40%. Totalmente recomendable.',
-      image: 'https://ui-avatars.com/api/?name=Maria+Lopez&background=0284c7&color=fff&size=128',
-    },
-    {
-      name: 'Carlos Ruiz',
-      business: 'Asador Don Carlos',
-      businessType: 'Asador',
+      name: 'Ana Velasco',
+      business: 'Salón Belleza Moderna',
+      businessType: 'Peluquería',
       location: 'Madrid',
       rating: 5,
-      result: '3x más visibilidad en Google',
-      text: 'Mejor inversión que he hecho para mi restaurante. Ahora aparezco en Google y los clientes me encuentran fácilmente. El proceso fue súper fácil y rápido.',
-      image: 'https://ui-avatars.com/api/?name=Carlos+Ruiz&background=0284c7&color=fff&size=128',
+      result: '+65% reservas online',
+      text: 'Desde que tenemos la web, las reservas se han disparado. Los clientes ven las fotos y quieren reservar al instante. La inversión se pagó sola en el primer mes.',
+      image: 'https://ui-avatars.com/api/?name=Ana+Velasco&background=ec4899&color=fff&size=128&bold=true',
     },
     {
-      name: 'Laura Martínez',
-      business: 'Tapas & Co',
-      businessType: 'Tapería',
+      name: 'Dr. Miguel Sánchez',
+      business: 'Clínica Dental Sonrisa',
+      businessType: 'Clínica Dental',
+      location: 'Barcelona',
+      rating: 5,
+      result: '3x más pacientes nuevos',
+      text: 'Profesionalismo absoluto. La web transmite confianza y mis pacientes me felicitan constantemente. Hemos triplicado las consultas de nuevos pacientes.',
+      image: 'https://ui-avatars.com/api/?name=Miguel+Sanchez&background=3b82f6&color=fff&size=128&bold=true',
+    },
+    {
+      name: 'Patricia Gómez',
+      business: 'Centro Wellness Armonía',
+      businessType: 'Centro de Estética',
       location: 'Valencia',
       rating: 5,
-      result: '+50% consultas online',
-      text: 'Me encanta lo fácil que es actualizar el menú. Las fotos quedaron increíbles y los clientes siempre comentan lo profesional que se ve todo. Altamente profesional.',
-      image: 'https://ui-avatars.com/api/?name=Laura+Martinez&background=0284c7&color=fff&size=128',
+      result: '+80% ventas de tratamientos',
+      text: 'Las fotos profesionales hacen que los tratamientos se vendan solos. Mis clientas reservan directamente desde la web. Increíble retorno de inversión.',
+      image: 'https://ui-avatars.com/api/?name=Patricia+Gomez&background=14b8a6&color=fff&size=128&bold=true',
     },
   ];
 
   return (
-    <Section background="white" id="testimonios" className="py-20 md:py-28">
+    <Section background="gradient" id="testimonios" className="py-20 md:py-28">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-900 mb-4">
-          Casos de éxito reales
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-900 mb-6">
+          Resultados reales de negocios como el tuyo
         </h2>
-        <p className="text-lg text-secondary-600 max-w-3xl mx-auto">
-          Negocios locales que ya están consiguiendo resultados con Sherfand Trade
+        <p className="text-lg md:text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
+          Descubre cómo otros negocios locales han multiplicado sus ventas con una web profesional
         </p>
       </div>
 
-      {/* Grid de testimonios */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {/* Grid de testimonios premium */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {testimonios.map((testimonio, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg p-8 border border-secondary-200 hover:border-primary-600 hover:shadow-lg transition-all duration-200"
+            className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-secondary-100 hover:border-primary-400 transform hover:-translate-y-1"
           >
+            {/* Header con foto y rating */}
+            <div className="flex items-start justify-between mb-6">
+              <div className="flex items-center gap-4">
+                <img 
+                  src={testimonio.image} 
+                  alt={testimonio.name}
+                  className="w-16 h-16 rounded-full shadow-lg ring-4 ring-white"
+                />
+                <div>
+                  <p className="font-bold text-secondary-900 text-lg">{testimonio.name}</p>
+                  <p className="text-sm text-secondary-600 font-medium">{testimonio.businessType}</p>
+                </div>
+              </div>
+            </div>
+
             {/* Rating con estrellas */}
             <div className="flex gap-1 mb-4">
               {Array.from({ length: testimonio.rating }).map((_, i) => (
                 <Star
                   key={i}
-                  size={18}
+                  size={20}
                   className="text-yellow-500 fill-yellow-500"
                 />
               ))}
             </div>
 
-            {/* Resultado destacado */}
-            <div className="mb-4 inline-block bg-primary-50 text-primary-700 px-3 py-1 rounded text-sm font-semibold">
-              {testimonio.result}
+            {/* Resultado destacado premium */}
+            <div className="mb-6">
+              <div className="inline-block bg-gradient-to-r from-primary-600 to-primary-700 text-white px-5 py-2 rounded-full text-sm font-bold shadow-md">
+                {testimonio.result}
+              </div>
             </div>
 
             {/* Testimonio text */}
-            <p className="text-secondary-700 leading-relaxed mb-6 text-sm">
+            <p className="text-secondary-700 leading-relaxed mb-6 text-base italic">
               &ldquo;{testimonio.text}&rdquo;
             </p>
 
-            {/* Author info con foto real */}
-            <div className="flex items-center gap-3 pt-4 border-t border-secondary-200">
-              <img 
-                src={testimonio.image} 
-                alt={testimonio.name}
-                className="w-12 h-12 rounded-full"
-              />
-              <div>
-                <p className="font-bold text-secondary-900 text-sm">{testimonio.name}</p>
-                <p className="text-xs text-secondary-600">{testimonio.businessType} · {testimonio.location}</p>
-              </div>
+            {/* Business info */}
+            <div className="pt-4 border-t border-secondary-200">
+              <p className="text-sm font-semibold text-secondary-900">{testimonio.business}</p>
+              <p className="text-xs text-secondary-500 mt-1">{testimonio.location}</p>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Social proof adicional */}
-      <div className="text-center mt-12">
-        <div className="inline-flex items-center gap-6 bg-secondary-50 rounded-lg px-8 py-4 border border-secondary-200">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-secondary-900">4.9</span>
-            <Star size={20} className="text-yellow-500 fill-yellow-500" />
+      {/* Social proof adicional premium */}
+      <div className="text-center mt-16">
+        <div className="inline-flex items-center gap-6 bg-white rounded-2xl px-10 py-6 border-2 border-primary-200 shadow-lg">
+          <div className="flex items-center gap-3">
+            <span className="text-4xl font-black text-primary-600">4.9</span>
+            <Star size={28} className="text-yellow-500 fill-yellow-500" />
           </div>
-          <div className="h-8 w-px bg-secondary-300"></div>
-          <p className="text-sm text-secondary-700 font-medium">
-            Más de 50 negocios satisfechos
-          </p>
+          <div className="h-12 w-px bg-secondary-300"></div>
+          <div className="text-left">
+            <p className="text-lg font-bold text-secondary-900">
+              Más de 50 negocios creciendo
+            </p>
+            <p className="text-sm text-secondary-600">
+              Valoración media de clientes satisfechos
+            </p>
+          </div>
         </div>
       </div>
     </Section>

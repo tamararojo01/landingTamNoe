@@ -26,7 +26,7 @@ export const Header = () => {
 
   const handleCTAClick = () => {
     const phone = '34660666706';
-    const message = 'Hola! Quiero conseguir mi web + fotos profesionales';
+    const message = 'Hola! Quiero una consulta gratis sobre mi web profesional';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -54,10 +54,10 @@ export const Header = () => {
           <Button
             onClick={handleCTAClick}
             size="lg"
-            className="px-4 md:px-8 py-2 md:py-3 text-sm md:text-lg font-bold bg-primary-600 hover:bg-primary-700 shadow-lg hover:shadow-xl transition-all"
+            className="px-4 md:px-8 py-2 md:py-3 text-sm md:text-base font-bold bg-primary-600 hover:bg-primary-700 shadow-lg hover:shadow-xl transition-all"
           >
-            <span className="hidden md:inline">Consigue web + fotos ahora</span>
-            <span className="md:hidden">Solicitar ahora</span>
+            <span className="hidden md:inline">Consulta gratis</span>
+            <span className="md:hidden">Consulta</span>
           </Button>
         </div>
       </div>

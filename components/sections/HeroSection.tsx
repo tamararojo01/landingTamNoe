@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, TrendingUp, Camera, Smartphone } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Section } from '../ui/Section';
 
@@ -44,19 +44,25 @@ export const HeroSection = () => {
           Webs + fotos profesionales que atraen clientes y hacen crecer tu negocio
         </p>
 
-        {/* 3 Bullets de valor profesional */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-12 text-base md:text-lg text-secondary-700">
-          <div className="flex items-center gap-2 font-semibold">
-            <span className="text-primary-600 text-2xl">●</span>
-            <span>Diseño que convierte visitas en ventas</span>
+        {/* 3 Bullets de valor persuasivos - Premium */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-12 max-w-4xl mx-auto">
+          <div className="flex items-center gap-3 bg-gradient-to-br from-primary-50 to-white px-6 py-4 rounded-xl border border-primary-200 shadow-sm hover:shadow-md transition-all">
+            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg flex items-center justify-center shadow-md">
+              <TrendingUp className="text-white" size={24} />
+            </div>
+            <span className="text-base md:text-lg font-bold text-secondary-900">+40% clientes o ventas en 2 semanas</span>
           </div>
-          <div className="flex items-center gap-2 font-semibold">
-            <span className="text-primary-600 text-2xl">●</span>
-            <span>Fotografía profesional incluida</span>
+          <div className="flex items-center gap-3 bg-gradient-to-br from-primary-50 to-white px-6 py-4 rounded-xl border border-primary-200 shadow-sm hover:shadow-md transition-all">
+            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg flex items-center justify-center shadow-md">
+              <Camera className="text-white" size={24} />
+            </div>
+            <span className="text-base md:text-lg font-bold text-secondary-900">Fotos que venden tus productos o servicios</span>
           </div>
-          <div className="flex items-center gap-2 font-semibold">
-            <span className="text-primary-600 text-2xl">●</span>
-            <span>Entrega garantizada en 7 días</span>
+          <div className="flex items-center gap-3 bg-gradient-to-br from-primary-50 to-white px-6 py-4 rounded-xl border border-primary-200 shadow-sm hover:shadow-md transition-all">
+            <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg flex items-center justify-center shadow-md">
+              <Smartphone className="text-white" size={24} />
+            </div>
+            <span className="text-base md:text-lg font-bold text-secondary-900">Web optimizada para Google y móvil</span>
           </div>
         </div>
 
